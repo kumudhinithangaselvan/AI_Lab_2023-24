@@ -37,7 +37,8 @@ dfs(visited, graph, '5')
 
 ```
 ### Output:
-![{885074C3-CB78-4361-B1D7-A65742CC5E84}](https://github.com/user-attachments/assets/5e9c0491-d522-4511-861c-743b9e157595)
+![WhatsApp Image 2025-03-11 at 14 46 08_cd122b6c](https://github.com/user-attachments/assets/74494fcf-079b-4f69-a4d5-7a22534158fd)
+
 
 
 ### Result:
