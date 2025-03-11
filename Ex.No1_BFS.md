@@ -54,7 +54,7 @@ bfs(visited, graph, '5')  # Function calling
 
 
 ### Output:
-![WhatsApp Image 2025-03-11 at 14 46 08_cd122b6c](https://github.com/user-attachments/assets/fe9b448f-749d-47ae-9d69-3b129e6e5c02)
+https://github.com/user-attachments/assets/fe9b448f-749d-47ae-9d69-3b129e6e5c02
 
 
 
