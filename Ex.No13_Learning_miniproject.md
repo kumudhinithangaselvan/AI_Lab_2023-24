@@ -15,7 +15,7 @@ To write a program to train the classifier for Differentiated Thyroid Cancer Rec
 ### Program:
 
 """Thyroid Cancer Recurrence Graphs"""
-
+```
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -24,7 +24,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import zipfile
 import os
-
+```
 # 1. Load and Prepare Data
 # Upload ZIP
 from google.colab import files
@@ -51,7 +51,7 @@ for col in df_encoded.columns:
     if 'Recur' in col:
         target_column = col
         break
-
+```
 if target_column:
     X = df_encoded.drop(target_column, axis=1)
     y = df_encoded[target_column]
@@ -106,7 +106,7 @@ if target_column:
 else:
     print("Error: Target column not found! Please check your data.")
 
-
+```
 ### Output:
 
 ![Screenshot 2025-05-14 105026](https://github.com/user-attachments/assets/a138580f-4268-45d2-a405-ee77a8ef3e2f)
