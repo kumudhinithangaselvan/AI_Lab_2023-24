@@ -1,7 +1,9 @@
 # Ex.No: 13 Learning – Use Supervised Learning  
 ### DATE:                                                                          
 ### REGISTER NUMBER : 212222040084
-### AIM: 
+
+### AIM:
+
 To write a program to train the classifier for Differentiated Thyroid Cancer Recurrence.
 ###  Algorithm:
 
@@ -15,7 +17,7 @@ To write a program to train the classifier for Differentiated Thyroid Cancer Rec
 ### Program:
 
 """Thyroid Cancer Recurrence Graphs"""
-
+```
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -24,6 +26,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import zipfile
 import os
+```
 
 # 1. Load and Prepare Data
 # Upload ZIP
@@ -55,7 +58,7 @@ for col in df_encoded.columns:
 if target_column:
     X = df_encoded.drop(target_column, axis=1)
     y = df_encoded[target_column]
-
+```
     # Train/Test Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -105,7 +108,7 @@ if target_column:
     print("Classification Report:\n", classification_report(y_test, y_pred))
 else:
     print("Error: Target column not found! Please check your data.")
-
+```
 
 ### Output:
 
