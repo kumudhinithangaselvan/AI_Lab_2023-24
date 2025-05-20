@@ -28,19 +28,19 @@ import zipfile
 import os
 ```
 
-# 1. Load and Prepare Data
-# Upload ZIP
+#  Load and Prepare Data
+#  Upload ZIP
 from google.colab import files
 uploaded = files.upload()
 
-# Extract ZIP
+#  Extract ZIP
 zip_filename = list(uploaded.keys())[0]
 extract_dir = "thyroid_data"
 
 with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
     zip_ref.extractall(extract_dir)
 
-# Construct the CSV path dynamically after extracting the ZIP
+#  Construct the CSV path dynamically after extracting the ZIP
 csv_path = os.path.join(extract_dir, "Thyroid_Diff.csv")
 df = pd.read_csv(csv_path)
 
@@ -59,7 +59,7 @@ if target_column:
     X = df_encoded.drop(target_column, axis=1)
     y = df_encoded[target_column]
 ```
-    # Train/Test Split
+    Train/Test Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # 2. Train Model
